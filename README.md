@@ -1,6 +1,6 @@
  Mcq algorithm which is simillar to some courses on coursera.org.
  
-🔸 We can input the desired no of questions with desired amount of answers. Even you add a "?" at the end of the question or not, algorithm automatically adds a "?" at the end of each question. 
+🔸 We can input the desired no of questions with desired amount of answers. Even you add a "?" at the end of the question or not, the algorithm will automatically add a "?" at the end of each question. 
 ![Screenshot (1167)](https://user-images.githubusercontent.com/126737598/222487375-61199fe4-670f-4ef4-a535-c6d4caea2aae.png)
 
 ![Screenshot (1168)](https://user-images.githubusercontent.com/126737598/222487409-4ebd6c80-2ad7-4689-8f12-d560bece8c82.png)
@@ -17,6 +17,6 @@
 
 ![Screenshot (1172)](https://user-images.githubusercontent.com/126737598/222487528-51b0ba4c-f37c-4f3b-84d0-aa3589794d4d.png)
 
-🔸 Finally you will get as small summary as seen below.
+🔸 Finally you will get as small results summary as seen below.
 
 ![Screenshot (1173)](https://user-images.githubusercontent.com/126737598/222487560-2a6ed1ab-2707-4553-bba1-b39a11dae27e.png)
