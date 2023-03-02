@@ -1,0 +1,64 @@
+package Mcq;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class DefaultQuestions {
+	
+	public String finalResults="---------- Results -------------\n\n";
+	int pointsDefault = 0, totalDefaultQues = 0;
+	
+	public void Questions(String question, String ansList[], String ans ) {
+		ArrayList<String> answers =new ArrayList<String>();
+		for (String i : ansList) {
+			answers.add(i);
+		}
+		
+		if (question.endsWith("?")){}
+		else {
+			question +="?";
+		}
+		
+		System.out.println("Q) "+question);
+		finalResults += question +"\n";
+		ArrayList<String> newanswers = new ArrayList<String>();
+		Collections.shuffle(answers);
+		for (int i=0 ; i < answers.size(); i++) {
+			System.out.println("  "+ (i+1) + ". " + answers.get(i));
+			finalResults += "  "+ (i+1) + ". " + answers.get(i) + "\n";
+		}
+		
+		Scanner scnAns = new Scanner(System.in);
+		System.out.println("Type the Answer number: ");
+
+		int ansEntered = scnAns.nextInt();
+		if ((0 < ansEntered) && (ansEntered < (answers.size()+1))) {}
+		else {
+			int ansEntered1 = -1;
+			while (((0 < ansEntered1) && (ansEntered1 < (answers.size()+1))) == false) {
+				System.out.println("Please enter a value between 1 and " + (answers.size()) + ":");
+				Scanner scnAns1 = new Scanner(System.in);
+				ansEntered1 = scnAns1.nextInt();
+			}
+			ansEntered = ansEntered1;
+		}
+		
+		if (answers.get(ansEntered-1)== ans) {
+			finalResults += ":) ANSWER IS CORRECT \n" + "Answer you Entered: " + ansEntered+ ". " + answers.get(ansEntered-1) +"\n\n" ;
+			pointsDefault +=1;
+			totalDefaultQues +=1;
+		}
+		else {
+			finalResults += ":( ANSWER IS INCORRECT \n" + "Answer you Entered: " + ansEntered+ ". " + answers.get(ansEntered-1) +"\n" + "Correct Answer: " + (answers.indexOf(ans)+1) + ". " +ans + "\n\n";
+			totalDefaultQues +=1;
+		}
+	}
+	
+	public void printResultDefault() {
+		System.out.println(finalResults);
+		System.out.println("* No of correct answers: " + pointsDefault + "     " + "* No of wrong answers: " + (totalDefaultQues-pointsDefault) );
+		System.out.println("Percentage of correct answers: " + Math.round(((float)pointsDefault/(float)totalDefaultQues)*10000)*0.01 + "%");
+		
+	}
+	
+}

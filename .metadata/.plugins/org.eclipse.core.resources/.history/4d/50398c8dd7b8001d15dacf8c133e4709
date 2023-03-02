@@ -1,0 +1,31 @@
+package Mcq;
+
+import java.util.ArrayList;
+
+public class FinalClass {
+	public static void main (String args[]) {
+//		DefaultQuestions defObj = new DefaultQuestions();
+//		ArrayList<String> a1= new ArrayList<String>();
+//		a1.add("Kandy");a1.add("Colombo");a1.add("Galle");a1.add("Matara");
+//		
+//		ArrayList<String> a2= new ArrayList<String>();
+//		a2.add("Kandy");a2.add("Colombo");a2.add("Galle");a2.add("Matara");
+//		
+//		
+//		defObj.Questions("What is the longest river in Sri Lanka", a1, "Matara");
+//		defObj.Questions("What is the best road in Asia?", a2, "Kandy");
+//		System.out.println(defObj.finalResults);
+		
+		System.out.println("Welcome to the MCQ test");
+		
+		DefaultQuestions defObj = new DefaultQuestions();
+		
+		String a1[] = {"Kandy","Colombo","Galle","Matara"};
+		defObj.Questions("What is the longest river in Sri Lanka", a1, "Matara");
+		
+		String a2[] = {"Kandy","Colombo","Galle","Matara"};
+		defObj.Questions("What is the best road in Asia?", a2, "Kandy");
+		
+		defObj.printResultDefault();
+	}
+}
