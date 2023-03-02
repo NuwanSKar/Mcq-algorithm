@@ -8,11 +8,15 @@
 
 ![Screenshot (1169)](https://user-images.githubusercontent.com/126737598/222487451-4507768d-d7b0-41f2-babd-2ef79274f9a6.png)
 
-![Screenshot (1170)](https://user-images.githubusercontent.com/126737598/222487472-84bc7529-60a1-4286-9401-6fbd9add6809.png)
-
 🔸 Shuffles the answers every time when it loads. Question stays the same as we see in coursera.org platform. 
 
+![Screenshot (1170)](https://user-images.githubusercontent.com/126737598/222487472-84bc7529-60a1-4286-9401-6fbd9add6809.png)
+
 ![Screenshot (1171)](https://user-images.githubusercontent.com/126737598/222487498-663601ea-b773-4735-ae27-dbec88902b9f.png)
+
+🔸 Notifies you to enter number in the range if you exceeds the range
+
+![image](https://user-images.githubusercontent.com/126737598/222499680-f3993270-7743-4aa9-8e02-ffefc91429a2.png)
 
 🔸 Results are printed as seen below after answering all the questions.
 
