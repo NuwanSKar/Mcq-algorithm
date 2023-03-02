@@ -1,4 +1,4 @@
- Mcq algorithm which is simillar to some courses on coursera.org.
+ Mcq algorithm which is similar to some courses on coursera.org.
  
 🔸 We can input the desired no of questions with desired amount of answers. Even you add a "?" at the end of the question or not, the algorithm will automatically add a "?" at the end of each question.
 
